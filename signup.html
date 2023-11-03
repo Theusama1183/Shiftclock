@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <title>Signup | Shiftclock</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 bg-primery ">
+                <div class="d-flex justify-content-center align-items-center vh-100">
+                    <div class="d-flex flex-column align-items-center">
+                        <div class="slider-container">
+                            <div class="slider">
+                                <div class="slider-item"><img src="images/slide-page-image.png" alt="Image 1">
+                                    <div class="slide-content">
+                                        <h5>Clock in and out</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing eli</p>
+                                    </div>
+                                </div>
+                                <div class="slider-item"><img src="images/slide-page-image.png" alt="Image 2">
+                                    <div class="slide-content">
+                                        <h5>Clock in and out</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing eli</p>
+                                    </div>
+                                </div>
+                                <div class="slider-item"><img src="images/slide-page-image.png" alt="Image 3">
+                                    <div class="slide-content">
+                                        <h5>Clock in and out</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing eli</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                        <div class="slider-dots">
+                            <span class="slider-dot active" onclick="showSlide(0)"></span>
+                            <span class="slider-dot" onclick="showSlide(1)"></span>
+                            <span class="slider-dot" onclick="showSlide(2)"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+
+                <div class="d-flex flex-column">
+                    <div class="form-container">
+                        <img src="images/logo.png" class="form-logo" alt="Logo">
+                        <h2>Create Account</h2>
+                        <p>Please enter your personal data</p>
+                        <div class="login-form">
+                            <form>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="username" placeholder="Username">
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <input type="password" class="form-control" id="password"
+                                            placeholder="Password">
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Login</button>
+                            </form>
+                        </div>
+                        <div class="d-flex justify-content-between w-100 mt-4">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="rememberMe">
+                                <label class="form-check-label" for="rememberMe">Remember Me</label>
+                            </div>
+                            <a href="#" class="forgot-password">Forgot Password?</a>
+                        </div>
+                        <div class="bordered-heading mt-4">
+                            <p>Biometric Login</p>
+                        </div>
+                        <div class="d-flex justify-content-between w-100 mt-2">
+                            <button class="ico-border-btn">
+                                <img class="mr-2" src="images/icons/ionic-ios-finger-print.svg" alt="">
+                                <span>PIN/Pattern</span>
+                            </button>
+                            <button class="ico-border-btn">
+                                <img class="mr-2" src="images/icons/face-id-svgrepo-com.svg" alt="">
+                                <span>Face ID</span>
+                            </button>
+                        </div>
+                        <p class="account-text">No account yet? <a href="#">Signup here</a></p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/assets/scripts/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.bg-primery {
+    background-color: #21357C;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    margin: auto;
+    padding: 100px 0;
+    height: 100vh;
+}
+
+.login-form {
+    width: 100%;
+}
+
+.form-container h2 {
+    font-weight: 600;
+    font-size: 32px;
+    color: #21357C;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.form-container p {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+.form-container .form-logo {
+    width: 250px;
+}
+
+.form-control {
+    height: calc(2.9em + .75rem + 2px) !important;
+    box-sizing: border-box !important;
+    background: #FFFFFF !important;
+    border: 1px solid #CCCCCC !important;
+    border-radius: 10px !important;
+}
+
+button.btn.btn-primary {
+    background: #21357C !important;
+    border-color: #21357C !important;
+    width: 100% !important;
+    height: 60px !important;
+    border-radius: 10px !important;
+}
+
+input#rememberMe {
+    width: 16px !important;
+    height: 16px !important;
+    border: 1px solid #DCDCDC !important;
+}
+
+a.forgot-password {
+    color: #2ADEF5;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 14px;
+}
+
+.slider-container {
+    width: 400px;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s;
+}
+
+.slider-item img {
+    width: 400px;
+    height: auto;
+}
+
+.slider-item {
+    width: 400px;
+    height: auto;
+}
+
+.slider-dots {
+    text-align: center;
+    width: 400px;
+}
+
+.slider-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.slider-dot.active {
+    background-color: #2ADEF5;
+}
+
+
+.slider-item h5 {
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.slider-item p {
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.bordered-heading {
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.bordered-heading::before,
+.bordered-heading::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 1px;
+    background-color: #CCCCCC;
+    /* Change to your desired border color */
+    top: 28%;
+}
+
+.bordered-heading::before {
+    left: 0;
+}
+
+.bordered-heading::after {
+    right: 0;
+}
+
+.bordered-heading p {
+    background-color: #fff;
+    /* Background color behind the heading text */
+    display: inline-block;
+    padding: 0 20px;
+    /* Adjust the padding as needed */
+    position: relative;
+    z-index: 1;
+}
+
+.ico-border-btn {
+    box-sizing: border-box;
+    width: 190px;
+    height: 50px;
+    background: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 10px;
+}
+
+.ico-border-btn span {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    color: #000000;
+}
+
+.account-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 14px;
+    text-align: center;
+    color: #000000;
+    margin-top: 30px;
+}
+
+.account-text a {
+    color: #2ADEF5;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .form-container .form-logo {
+        width: 200px;
+    }
+
+    .login-form {
+        width: 100%;
+    }
+
+    .form-container {
+        width: 290px;
+        height: 100%;
+    }
+
+    .signup-form .form-container {
+        width: 290px !important;
+    }
+
+    .ico-border-btn {
+        width: 140px;
+    }
+
+    .slide-content {
+        width: 300px;
+        margin: auto;
+    }
+}
+
+.signup-form .form-container {
+    width: 800px;
+}
+
+
+

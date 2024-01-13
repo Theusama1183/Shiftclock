@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Reports | Shiftclock</title>
+    <link
+      href="vendor/fontawesome-free/css/all.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="vendor/styles/dashboard.min.css" rel="stylesheet" />
+    <link
+      href="vendor/fontawesome-free/css/all.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="vendor/styles/dashboard.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="vendor/styles/style.css" />
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap-grid.min.css" />
+    <link
+      rel="stylesheet"
+      href="vendor/bootstrap/css/bootstrap-reboot.min.css"
+    />
+  </head>
+
+  <body id="page-top">
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+      <ul
+        class="navbar-nav bg-gradient-white sidebar shadow sidebar-light accordion"
+        id="accordionSidebar"
+      >
+        <!-- Sidebar - Brand -->
+        <div
+          class="sidebar-brand mt-4 d-flex align-items-center justify-content-center justify-content-between"
+        >
+          <a href="index.html" class="sidebar-brand-logo"
+            ><img src="vendor/images/logo.png" alt=""
+          /></a>
+          <div class="text-center d-none d-md-inline">
+            <button class="rounded-circle border-0" id="sidebarToggle"></button>
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <hr class="sidebar-divider my-0 mt-4" />
+
+        <div class="sidebar-menu-container">
+          <!-- Nav Item - Dashboard -->
+          <li class="nav-item mt-4">
+            <a class="nav-link" href="index.html">
+              <svg
+                width="17"
+                height="17"
+                viewBox="0 0 17 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.5 16.0925C16.5 16.5937 16.102 17 15.6111 17H1.38889C0.897973 17 0.5 16.5937 0.5 16.0925V6.55405C0.5 6.27401 0.62664 6.00966 0.843164 5.83773L7.95431 0.191157C8.27529 -0.063719 8.72471 -0.063719 9.04569 0.191157L16.1568 5.83773C16.3733 6.00966 16.5 6.27401 16.5 6.55405V16.0925ZM14.7222 15.185V6.99789L8.5 2.05714L2.27778 6.99789V15.185H14.7222ZM4.05556 11.5551H12.9444V13.3701H4.05556V11.5551Z"
+                  fill="#495994"
+                />
+              </svg>
+              <span>Dashboard</span>
+            </a>
+          </li>
+
+          <!-- Nav Item - Departments -->
+          <li class="nav-item mt-2">
+            <a class="nav-link" href="departments.html">
+              <svg
+                width="17"
+                height="13"
+                viewBox="0 0 17 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 13H5.36842V6.5H0V13ZM6.26316 13H17V6.5H6.26316V13ZM0 0V5.57143H17V0H0Z"
+                  fill="#21357C"
+                  fill-opacity="0.8"
+                />
+              </svg>
+              <span>Departments</span>
+            </a>
+          </li>
+
+          <!-- Nav Item - Leaves -->
+          <li class="nav-item mt-2">
+            <a class="nav-link" href="leaves.html">
+              <svg
+                width="10"
+                height="14"
+                viewBox="0 0 10 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6.84177 3.25692H9.83564C9.85733 3.25717 9.87886 3.25308 9.89895 3.24489C9.91904 3.23671 9.93729 3.22459 9.95263 3.20925C9.96797 3.19391 9.98009 3.17565 9.98828 3.15556C9.99646 3.13547 10.0006 3.11395 10.0003 3.09225C10.0009 2.94853 9.96966 2.80646 9.90884 2.67624C9.84802 2.54603 9.75912 2.43089 9.64852 2.33911L7.13741 0.246674C6.94706 0.0887959 6.70735 0.00271158 6.46005 0.00342233C6.42809 0.00336069 6.39643 0.00961052 6.36689 0.0218132C6.33735 0.0340159 6.31051 0.0519314 6.28791 0.0745317C6.26531 0.097132 6.24739 0.123972 6.23519 0.153513C6.22299 0.183053 6.21674 0.214713 6.2168 0.246674V2.63241C6.2168 2.71446 6.23297 2.79571 6.26438 2.87151C6.29579 2.94731 6.34184 3.01617 6.39988 3.07417C6.45792 3.13217 6.52682 3.17816 6.60264 3.20951C6.67846 3.24087 6.75972 3.25698 6.84177 3.25692Z"
+                  fill="#21357C"
+                  fill-opacity="0.8"
+                />
+                <path
+                  d="M5.3609 2.63133V0H1.05253C0.773649 0.000863613 0.506435 0.112032 0.309233 0.309234C0.112032 0.506435 0.000863613 0.773649 0 1.05253V12.1041C0.000863613 12.383 0.112032 12.6502 0.309233 12.8474C0.506435 13.0446 0.773649 13.1558 1.05253 13.1567H8.94652C9.22541 13.1558 9.49262 13.0446 9.68982 12.8474C9.88702 12.6502 9.99819 12.383 9.99905 12.1041V4.11142H6.84146C6.44902 4.11093 6.07279 3.95485 5.79525 3.6774C5.51772 3.39995 5.36152 3.02377 5.3609 2.63133Z"
+                  fill="#21357C"
+                  fill-opacity="0.8"
+                />
+              </svg>
+              <span>Leaves</span>
+            </a>
+          </li>
+
+          <!-- Nav Item - Employees -->
+          <li class="nav-item mt-2">
+            <a class="nav-link" href="employees.html">
+              <svg
+                width="17"
+                height="12"
+                viewBox="0 0 17 12"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5.1 6C5.6884 6 6.26359 5.82405 6.75282 5.49441C7.24206 5.16477 7.62337 4.69623 7.84854 4.14805C8.07371 3.59987 8.13263 2.99667 8.01784 2.41473C7.90305 1.83279 7.6197 1.29824 7.20364 0.878681C6.78758 0.459123 6.25749 0.173401 5.68039 0.0576455C5.1033 -0.0581101 4.50513 0.00129984 3.96152 0.228363C3.41791 0.455426 2.95327 0.839943 2.62638 1.33329C2.29948 1.82664 2.125 2.40666 2.125 3C2.1248 3.39402 2.20162 3.78422 2.35105 4.14829C2.50049 4.51236 2.71962 4.84315 2.99591 5.12177C3.27221 5.40038 3.60025 5.62135 3.96128 5.77205C4.32232 5.92274 4.70926 6.0002 5.1 6ZM7.14 6.85714H6.91938C6.35356 7.13906 5.73093 7.28572 5.09981 7.28572C4.46869 7.28572 3.84606 7.13906 3.28024 6.85714H3.06C2.24844 6.85714 1.47011 7.18224 0.896253 7.76093C0.322392 8.33961 0 9.12448 0 9.94286L0 10.7143C0.000100139 11.0552 0.134462 11.3822 0.373549 11.6233C0.612637 11.8644 0.93688 11.9999 1.275 12H8.925C9.26312 11.9999 9.58736 11.8644 9.82645 11.6233C10.0655 11.3822 10.1999 11.0552 10.2 10.7143V9.94286C10.2 9.53764 10.1209 9.13638 9.96707 8.76201C9.81329 8.38763 9.58789 8.04746 9.30375 7.76093C9.0196 7.47439 8.68227 7.2471 8.31101 7.09203C7.93975 6.93696 7.54184 6.85714 7.14 6.85714ZM12.75 6C13.2543 6 13.7474 5.84919 14.1667 5.56664C14.5861 5.28408 14.9129 4.88248 15.1059 4.41262C15.2989 3.94275 15.3494 3.42572 15.251 2.92691C15.1526 2.4281 14.9097 1.96992 14.5531 1.6103C14.1965 1.25068 13.7421 1.00577 13.2475 0.906553C12.7528 0.807334 12.2401 0.858257 11.7742 1.05288C11.3082 1.24751 10.91 1.57709 10.6298 1.99996C10.3496 2.42283 10.2 2.91999 10.2 3.42857C10.2002 4.1105 10.4689 4.76443 10.9471 5.24662C11.4253 5.72882 12.0738 5.9998 12.75 6ZM14.025 6.85714H13.9241C13.167 7.14288 12.333 7.14288 11.5759 6.85714H11.475C10.9544 6.86065 10.444 7.00299 9.99562 7.26971C10.6703 7.99381 11.0472 8.94926 11.05 9.94286V10.9714C11.05 11.0305 11.0368 11.0857 11.0341 11.1429H15.725C16.0631 11.1428 16.3874 11.0073 16.6265 10.7662C16.8655 10.5251 16.9999 10.1981 17 9.85714C17.0002 9.46312 16.9234 9.07292 16.7739 8.70886C16.6245 8.34479 16.4054 8.01399 16.1291 7.73538C15.8528 7.45676 15.5248 7.23579 15.1637 7.0851C14.8027 6.9344 14.4157 6.85694 14.025 6.85714Z"
+                  fill="#21357C"
+                  fill-opacity="0.8"
+                />
+              </svg>
+              <span>Employees</span>
+            </a>
+          </li>
+
+          <!-- Nav Item - Geo Location -->
+          <li class="nav-item mt-2">
+            <a class="nav-link" href="geo-location.html">
+              <svg
+                width="13"
+                height="13"
+                viewBox="0 0 13 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.8239 11.2407L10.2915 8.70864C10.2345 8.65188 10.1669 8.60695 10.0925 8.57644C10.0181 8.54594 9.9384 8.53047 9.858 8.53093H9.44549C10.2728 7.47086 10.6647 6.13515 10.5411 4.79615C10.4175 3.45716 9.78782 2.21572 8.78043 1.32497C7.77305 0.434218 6.46382 -0.0387561 5.11972 0.00248723C3.77561 0.0437306 2.49785 0.596085 1.54698 1.54692C0.596107 2.49776 0.0437322 3.77547 0.00248732 5.11953C-0.0387576 6.46358 0.434234 7.77276 1.32502 8.78011C2.2158 9.78745 3.45729 10.4171 4.79633 10.5407C6.13538 10.6643 7.47114 10.2724 8.53125 9.44514V9.85908C8.53079 9.93948 8.54626 10.0192 8.57676 10.0936C8.60726 10.168 8.65219 10.2356 8.70897 10.2925L11.2415 12.8209C11.2979 12.8777 11.365 12.9227 11.4389 12.9535C11.5128 12.9842 11.592 13 11.672 13C11.7521 13 11.8313 12.9842 11.9052 12.9535C11.9791 12.9227 12.0462 12.8777 12.1026 12.8209L12.8214 12.1021C12.9354 11.9875 12.9995 11.8326 13 11.671C13.0005 11.5094 12.9372 11.3541 12.8239 11.2389V11.2407ZM5.27994 8.93692C4.55666 8.93685 3.84964 8.72231 3.2483 8.32044C2.64696 7.91856 2.17829 7.3474 1.90157 6.67917C1.62485 6.01095 1.5525 5.27568 1.69368 4.56634C1.83485 3.857 2.18321 3.20545 2.69469 2.69408C3.20618 2.18272 3.85782 1.8345 4.56721 1.69347C5.27661 1.55244 6.01189 1.62493 6.68009 1.90178C7.34828 2.17862 7.91937 2.64738 8.32115 3.24878C8.72292 3.85018 8.93733 4.55721 8.93725 5.28046C8.93749 5.76076 8.84305 6.2364 8.65933 6.68018C8.47561 7.12395 8.20621 7.52717 7.86654 7.86676C7.52687 8.20635 7.12359 8.47566 6.67976 8.65928C6.23593 8.84291 5.76025 8.93726 5.27994 8.93692ZM5.27994 2.8427C5.03367 2.84265 4.7898 2.89112 4.56226 2.98532C4.33473 3.07953 4.12798 3.21763 3.95382 3.39175C3.77967 3.56587 3.64152 3.77258 3.54726 4.00009C3.45301 4.2276 3.4045 4.47145 3.4045 4.71771C3.4045 5.55498 4.63011 7.08106 5.09969 7.63479C5.12172 7.66131 5.14933 7.68266 5.18054 7.69731C5.21176 7.71196 5.24581 7.71955 5.2803 7.71955C5.31478 7.71955 5.34884 7.71196 5.38005 7.69731C5.41127 7.68266 5.43887 7.66131 5.46091 7.63479C5.93049 7.0807 7.1561 5.55498 7.1561 4.71771C7.1561 4.47145 7.10758 4.2276 7.01333 4.00009C6.91908 3.77258 6.78093 3.56587 6.60677 3.39175C6.43262 3.21763 6.22587 3.07953 5.99833 2.98532C5.77079 2.89112 5.52693 2.84265 5.28066 2.8427H5.27994ZM5.27994 5.28082C5.15931 5.2809 5.04138 5.24519 4.94105 5.17822C4.84072 5.11125 4.76252 5.01603 4.71632 4.90461C4.67013 4.79318 4.65802 4.67056 4.68154 4.55225C4.70505 4.43395 4.76313 4.32527 4.84843 4.23998C4.93372 4.15469 5.0424 4.09661 5.16071 4.0731C5.27902 4.04958 5.40165 4.06169 5.51308 4.10788C5.62451 4.15407 5.71973 4.23228 5.7867 4.3326C5.85367 4.43292 5.88938 4.55085 5.88931 4.67147C5.88936 4.75153 5.87363 4.8308 5.84303 4.90477C5.81242 4.97874 5.76754 5.04596 5.71095 5.10258C5.65436 5.1592 5.58717 5.20412 5.51322 5.23477C5.43926 5.26541 5.35999 5.28119 5.27994 5.28119V5.28082Z"
+                  fill="#21357C"
+                  fill-opacity="0.8"
+                />
+              </svg>
+              <span>Geo Location</span>
+            </a>
+          </li>
+
+          <!-- Nav Item - Movements -->
+          <li class="nav-item mt-2">
+            <a class="nav-link" href="movements.html">
+              <svg
+                width="17"
+                height="12"
+                viewBox="0 0 17 12"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5.9585 7.71429H0V9.42857H5.9585V12L9.35 8.57143L5.9585 5.14286V7.71429ZM11.0415 6.85714V4.28571H17V2.57143H11.0415V0L7.65 3.42857L11.0415 6.85714Z"
+                  fill="#21357C"
+                  fill-opacity="0.8"
+                />
+              </svg>
+              <span>Movements</span>
+            </a>
+          </li>
+
+          <!-- Nav Item - Report -->
+          <li class="nav-item active mt-2">
+            <a class="nav-link" href="report.html">
+              <svg
+                width="14"
+                height="12"
+                viewBox="0 0 14 12"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.3125 0C0.96519 0.00249257 0.632827 0.138752 0.387234 0.379332C0.141642 0.619912 0.0025445 0.945492 0 1.28571L0 10.7143C0.0025445 11.0545 0.141642 11.3801 0.387234 11.6207C0.632827 11.8612 0.96519 11.9975 1.3125 12H12.6875C13.0348 11.9975 13.3672 11.8612 13.6128 11.6207C13.8584 11.3801 13.9975 11.0545 14 10.7143V1.28571C13.9975 0.945492 13.8584 0.619912 13.6128 0.379332C13.3672 0.138752 13.0348 0.00249257 12.6875 0L1.3125 0ZM1.75 1.71429H3.5V3.42857H1.75V1.71429ZM5.25 1.71429H12.25V3.42857H5.25V1.71429ZM1.75 5.14286H3.5V6.85714H1.75V5.14286ZM5.25 5.14286H12.25V6.85714H5.25V5.14286ZM1.75 8.57143H3.5V10.2857H1.75V8.57143ZM5.25 8.57143H12.25V10.2857H5.25V8.57143Z"
+                  fill="#21357C"
+                  fill-opacity="0.8"
+                />
+              </svg>
+              <span>Report</span>
+            </a>
+          </li>
+
+          <!-- Nav Item - Security -->
+          <li class="nav-item mt-2">
+            <a class="nav-link" href="security.html">
+              <svg
+                width="12"
+                height="13"
+                viewBox="0 0 12 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11.2622 2.12477L6.46222 0.0933417C6.31598 0.0317193 6.15921 0 6.00089 0C5.84256 0 5.68579 0.0317193 5.53956 0.0933417L0.739911 2.12477C0.520864 2.21692 0.333647 2.37299 0.201941 2.57324C0.0702354 2.77348 -4.15744e-05 3.0089 1.84516e-08 3.24972C1.84516e-08 8.29018 2.86258 11.7727 5.53742 12.9067C5.68366 12.9683 5.84043 13 5.99876 13C6.15708 13 6.31385 12.9683 6.46009 12.9067C8.60267 12.0002 12 8.86909 12 3.24972C12 3.0092 11.9299 2.77406 11.7986 2.57389C11.6674 2.37372 11.4807 2.21745 11.2622 2.12477ZM6.00249 11.3321L6 1.65745L10.3975 3.51877C10.315 7.36349 8.34667 10.1475 6.00249 11.3321Z"
+                  fill="#21357C"
+                  fill-opacity="0.8"
+                />
+              </svg>
+              <span>Security</span>
+            </a>
+          </li>
+
+          <!-- Nav Item - Holidays -->
+          <li class="nav-item mt-2">
+            <a class="nav-link" href="holidays.html">
+              <svg
+                width="14"
+                height="13"
+                viewBox="0 0 14 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.6537 1.07642H11.3073V1.88432C11.3071 1.95558 11.2786 2.02385 11.2282 2.07424C11.1779 2.12463 11.1096 2.15305 11.0383 2.1533H10.4999C10.4286 2.15305 10.3603 2.12463 10.31 2.07424C10.2596 2.02385 10.2311 1.95558 10.2309 1.88432V1.07642H3.7691V1.88432C3.76885 1.95558 3.74043 2.02385 3.69004 2.07424C3.63965 2.12463 3.57138 2.15305 3.50012 2.1533H2.96168C2.89033 2.15318 2.82194 2.12481 2.77145 2.07441C2.72095 2.02401 2.69247 1.95566 2.69222 1.88432V1.07642H1.34635C0.989584 1.07743 0.647722 1.2196 0.395452 1.47187C0.143182 1.72414 0.00101031 2.066 0 2.42276V11.5763C0.00113651 11.933 0.143363 12.2747 0.39562 12.5269C0.647877 12.7791 0.989667 12.9212 1.34635 12.9222H12.6537C13.0103 12.9212 13.3521 12.7791 13.6044 12.5269C13.8566 12.2747 13.9989 11.933 14 11.5763V2.42276C13.999 2.066 13.8568 1.72414 13.6045 1.47187C13.3523 1.2196 13.0104 1.07743 12.6537 1.07642ZM12.9231 11.1723C12.9226 11.3507 12.8515 11.5215 12.7255 11.6476C12.5994 11.7737 12.4285 11.8448 12.2502 11.8453H1.74982C1.5715 11.8448 1.40063 11.7737 1.27454 11.6476C1.14845 11.5215 1.07739 11.3507 1.07689 11.1723V5.11498C1.07714 5.04364 1.10563 4.97529 1.15612 4.92489C1.20661 4.87449 1.275 4.84612 1.34635 4.846H12.6537C12.7251 4.84612 12.7935 4.87455 12.8441 4.92506C12.8946 4.97557 12.923 5.04403 12.9231 5.11546V11.1723Z"
+                  fill="#21357C"
+                  fill-opacity="0.8"
+                />
+                <path
+                  d="M3.77025 0.268982C3.76999 0.197722 3.74157 0.129451 3.69118 0.0790618C3.64079 0.0286724 3.57252 0.000252253 3.50126 0H2.96282C2.89148 0.000126048 2.82308 0.0284904 2.77259 0.0788934C2.7221 0.129296 2.69361 0.197639 2.69336 0.268982V1.07641H3.77025V0.268982Z"
+                  fill="#21357C"
+                  fill-opacity="0.8"
+                />
+                <path
+                  d="M11.3069 0.268982C11.3066 0.197722 11.2782 0.129451 11.2278 0.0790618C11.1774 0.0286724 11.1092 0.000252253 11.0379 0H10.4995C10.4281 0.000252882 10.3598 0.0287389 10.3094 0.0792316C10.259 0.129724 10.2306 0.198117 10.2305 0.269461V1.07641H11.3069V0.268982Z"
+                  fill="#21357C"
+                  fill-opacity="0.8"
+                />
+              </svg>
+
+              <span>Holidays</span>
+            </a>
+          </li>
+        </div>
+
+        <!-- Nav Item - Settings -->
+        <li
+          class="nav-item mt-2 position-fixed bottom-0 left-0 border-top-1 rounded bg-white"
+        >
+          <a class="nav-link" href="settings.html">
+            <svg
+              width="12"
+              height="12"
+              viewBox="0 0 12 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11.0093 5.99845C11.0095 5.68644 11.1043 5.38181 11.2812 5.12473C11.458 4.86765 11.7086 4.67019 12 4.55837C11.8492 3.92828 11.5993 3.32612 11.2596 2.77439C11.0617 2.86174 10.8479 2.90712 10.6316 2.90769C10.3744 2.90806 10.1213 2.8441 9.89524 2.72164C9.66918 2.59918 9.47736 2.42211 9.33726 2.20657C9.19716 1.99102 9.11325 1.74385 9.09315 1.48759C9.07306 1.23132 9.11743 0.9741 9.22222 0.739364C8.67127 0.400017 8.06983 0.150444 7.44044 0C7.3288 0.291495 7.13132 0.542263 6.87409 0.719165C6.61686 0.896067 6.31199 0.990776 5.99978 0.990776C5.68756 0.990776 5.3827 0.896067 5.12547 0.719165C4.86824 0.542263 4.67075 0.291495 4.55911 0C3.92885 0.150755 3.32653 0.400618 2.77467 0.740252C2.87946 0.974988 2.92383 1.23221 2.90374 1.48848C2.88364 1.74474 2.79972 1.99191 2.65963 2.20745C2.51953 2.423 2.32771 2.60007 2.10164 2.72253C1.87558 2.84499 1.62245 2.90895 1.36533 2.90858C1.14887 2.90955 0.934726 2.86409 0.737333 2.77528C0.400484 3.3289 0.151738 3.93149 0 4.56148C0.291323 4.67314 0.541961 4.87044 0.718872 5.12737C0.895783 5.3843 0.990661 5.68879 0.990998 6.00071C0.991335 6.31263 0.897115 6.61733 0.720759 6.87463C0.544404 7.13194 0.294192 7.32978 0.0031111 7.44207C0.153906 8.07217 0.403833 8.67433 0.743555 9.22605C1.02822 9.09968 1.34449 9.0625 1.65072 9.11939C1.95694 9.17629 2.23873 9.3246 2.45897 9.54478C2.67921 9.76496 2.82755 10.0467 2.88447 10.3528C2.94138 10.659 2.90418 10.9752 2.77778 11.2597C3.32992 11.5988 3.93215 11.8487 4.56222 12C4.67389 11.7094 4.87105 11.4595 5.12769 11.2832C5.38433 11.1069 5.6884 11.0126 5.99978 11.0126C6.31116 11.0126 6.61522 11.1069 6.87186 11.2832C7.1285 11.4595 7.32566 11.7094 7.43733 12C8.06759 11.8492 8.66991 11.5994 9.22178 11.2597C9.0964 10.9752 9.05996 10.6594 9.11725 10.3537C9.17454 10.0481 9.32288 9.76689 9.54282 9.54701C9.76275 9.32713 10.044 9.17883 10.3497 9.12155C10.6555 9.06428 10.9714 9.1007 11.256 9.22605C11.5952 8.67406 11.8451 8.07198 11.9964 7.44207C11.7058 7.32858 11.4561 7.13011 11.28 6.87258C11.1039 6.61504 11.0096 6.3104 11.0093 5.99845ZM6.028 8.49469C5.53355 8.49469 5.0502 8.3481 4.63907 8.07347C4.22795 7.79884 3.90752 7.40849 3.7183 6.9518C3.52908 6.4951 3.47957 5.99256 3.57604 5.50774C3.6725 5.02291 3.9106 4.57757 4.26023 4.22803C4.60986 3.87848 5.05532 3.64044 5.54027 3.54401C6.02523 3.44757 6.52789 3.49706 6.98471 3.68623C7.44152 3.8754 7.83197 4.19575 8.10667 4.60677C8.38138 5.01779 8.528 5.50101 8.528 5.99533C8.52812 6.32359 8.46353 6.64864 8.33794 6.95193C8.21234 7.25522 8.0282 7.53079 7.79603 7.7629C7.56386 7.99501 7.28821 8.17911 6.98485 8.30467C6.68148 8.43024 6.35634 8.4948 6.028 8.49469Z"
+                fill="#21357C"
+                fill-opacity="0.8"
+              />
+            </svg>
+
+            <span>Settings</span>
+          </a>
+        </li>
+      </ul>
+
+      <!-- End of Sidebar -->
+
+      <!-- Content Wrapper -->
+      <div id="content-wrapper" class="d-flex flex-column">
+        <!-- Main Content -->
+        <div id="content">
+          <!-- Topbar -->
+          <nav
+            class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top pt-4"
+          >
+            <!-- Sidebar Toggle (Topbar) -->
+            <button
+              id="sidebarToggleTop"
+              class="btn btn-link d-md-none rounded-circle mr-3"
+            >
+              <i class="fa fa-bars"></i>
+            </button>
+
+            <!-- Topbar Search -->
+            <div
+              class="d-none d-sm-inline-block mr-auto ml-md-3 my-2 my-md-0 mw-100"
+            >
+              <h3 class="m-0 font-weight-bold text-primary">
+                Welcome Alicia White!
+              </h3>
+              <div aria-label="breadcrumb">
+                <ol class="breadcrumb p-0 mb-2 mt-0 bg-transparent">
+                  <li class="breadcrumb-item text-secondary">Home</li>
+                  <li
+                    class="breadcrumb-item active text-dark"
+                    aria-current="page"
+                  >
+                    Report
+                  </li>
+                </ol>
+              </div>
+            </div>
+
+            <!-- Topbar Navbar -->
+            <ul class="navbar-nav ml-auto">
+              <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+              <li class="nav-item dropdown no-arrow d-sm-none">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="searchDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <i class="fas fa-search fa-fw"></i>
+                </a>
+                <!-- Dropdown - Messages -->
+                <div
+                  class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                  aria-labelledby="searchDropdown"
+                >
+                  <form class="form-inline mr-auto w-100 navbar-search">
+                    <div class="input-group">
+                      <input
+                        type="text"
+                        class="form-control bg-light border-0 small"
+                        placeholder="Search for..."
+                        aria-label="Search"
+                        aria-describedby="basic-addon2"
+                      />
+                      <div class="input-group-append">
+                        <button class="btn btn-primary" type="button">
+                          <i class="fas fa-search fa-sm"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </li>
+
+              <!-- Nav Item - Alerts -->
+              <li class="nav-item dropdown no-arrow mx-1 d-none d-lg-inline">
+                <span class="nav-link dropdown-toggle"> 22 March 2022 </span>
+              </li>
+              <!-- Nav Item - User Information -->
+              <li class="nav-item dropdown no-arrow">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="userDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <img
+                    class="img-profile rounded-circle"
+                    src="vendor/images/profile-img.png"
+                  />
+                  <div class="user-name d-none d-lg-inline">
+                    <div class="name">
+                      <span class="mr-2 ml-2 text-black large fw-semibold"
+                        >Alicia White</span
+                      >
+                      <img
+                        src="vendor/images/icons/ionic-ios-arrow-down.png"
+                        alt=""
+                      />
+                      <p class="ml-2 mb-0">Manager</p>
+                    </div>
+                  </div>
+                </a>
+                <!-- Dropdown - User Information -->
+                <div
+                  class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                  aria-labelledby="userDropdown"
+                >
+                  <a class="dropdown-item" href="#">
+                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                    Profile
+                  </a>
+                  <a class="dropdown-item" href="#">
+                    <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                    Settings
+                  </a>
+                  <a class="dropdown-item" href="#">
+                    <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                    Activity Log
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    data-toggle="modal"
+                    data-target="#logoutModal"
+                  >
+                    <i
+                      class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"
+                    ></i>
+                    Logout
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </nav>
+          <!-- End of Topbar -->
+
+          <!-- Begin Page Content -->
+          <div class="container-fluid">
+            <!-- Page Heading -->
+            <div class="d-flex align-items-center mb-4 bg-primary p-3 rounded">
+              <img
+                src="vendor/images/icons/open-spreadsheet.svg"
+                alt=""
+              />
+              <div class="mb-0 ml-2 text-cyan font-weight-bold">Reports</div>
+            </div>
+
+            <!-- Content Row -->
+            <div class="row mt-4">
+              <h3 class="form-heading">GENERAL</h3>
+              <div
+                class="activity-report-card-container d-md-flex d-block align-items-stretch"
+              >
+                <div
+                  class="card activity-report-card shadow p-4 border-0 m-md-2 mt-2 w-md-25 w-100"
+                >
+                  <a class="" href="/view-report.html"
+                    ><h2>Time & activity</h2></a
+                  >
+                  <p>
+                    See employees time worked, activity levels, and amounts
+                    earned per project/work order
+                  </p>
+                </div>
+                <div
+                  class="card activity-report-card shadow p-4 border-0 m-md-2 mt-2 w-md-25 w-100"
+                >
+                  <a class="" href="/view-report.html"
+                    ><h2>Daily Totals (Weekly)</h2></a
+                  >
+                  <p>
+                    See employees time worked, activity levels, and amount
+                    earned per days
+                  </p>
+                </div>
+                <div
+                  class="card activity-report-card shadow p-4 border-0 m-md-2 mt-2 w-md-25 w-100"
+                >
+                  <a class="" href="/view-report.html"
+                    ><h2>Work sessions</h2></a
+                  >
+                  <p>See the start and stop times for employees</p>
+                </div>
+                <div
+                  class="card activity-report-card shadow p-4 border-0 m-md-2 mt-2 w-md-25 w-100"
+                >
+                  <a class="" href="/view-report.html"
+                    ><h2>Work breaks</h2></a
+                  >
+                  <p>See how many work breaks employees are taking</p>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-4">
+              <h3 class="form-heading">Schedule</h3>
+              <div
+                class="activity-report-card-container d-md-flex d-block align-items-stretch"
+              >
+                <div
+                  class="card activity-report-card shadow p-4 border-0 m-md-2 mt-2 w-md-25 w-100"
+                >
+                  <a class="" href="/view-report.html"
+                    ><h2>Shift attendance</h2></a
+                  >
+                  <p>
+                    See employees ' completed, late, abandoned, and missed shifts
+                  </p>
+                </div>
+                <div
+                  class="card activity-report-card shadow p-4 border-0 m-md-2 mt-2 w-md-25 w-100"
+                >
+                  <a class="" href="/view-report.html"
+                    ><h2>Job Attendance</h2></a
+                  >
+                  <p>
+                    See employees  completed, late, and missed jobs
+                  </p>
+                </div>
+                <div
+                  class="card activity-report-card shadow p-4 border-0 m-md-2 mt-2 w-md-25 w-100"
+                >
+                  <a class="" href="/view-report.html"
+                    ><h2>Work sessions</h2></a
+                  >
+                  <p>See the start and stop times for employees</p>
+                </div>
+                <div
+                  class="card activity-report-card shadow p-4 border-0 m-md-2 mt-2 w-md-25 w-100"
+                >
+                  <a class="" href="/view-report.html"
+                    ><h2>Work breaks</h2></a
+                  >
+                  <p>See how many work breaks employees are taking</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.container-fluid -->
+        </div>
+        <!-- End of Main Content -->
+
+        <!-- Footer -->
+        <footer class="sticky-footer bg-white">
+          <div class="container my-auto">
+            <div class="copyright text-center my-auto">
+              <span>Copyright © 2023, Shiftclock. All Rights Reserved</span>
+            </div>
+          </div>
+        </footer>
+        <!-- End of Footer -->
+      </div>
+      <!-- End of Content Wrapper -->
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <div
+      class="modal fade"
+      id="logoutModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+            <button
+              class="close"
+              type="button"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Select "Logout" below if you are ready to end your current session.
+          </div>
+          <div class="modal-footer">
+            <button
+              class="btn btn-secondary"
+              type="button"
+              data-dismiss="modal"
+            >
+              Cancel
+            </button>
+            <a class="btn btn-primary" href="login.html">Logout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="vendor/scripts/sb-admin-2.min.js"></script>
+    <script src="vendor/scripts/sb-admin-2.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="vendor/chart.js/Chart.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="vendor/scripts/chart-area.js"></script>
+    <script src="vendor/scripts/chart-pie.js"></script>
+  </body>
+</html>
